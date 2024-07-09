@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenerbahçe Spor Klubü</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/fb-logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/eba485b990.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/fb-logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Ana Sayfa</a></li>
+                    <li><a href="#about">Hakkımızda</a></li>
+                    <li><a href="#branslar">Branşlar</a></li>
+                    <li><a href="#news">Haberler</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FENERBAHÇE SK</p>
+                <h1>FENERBAHÇE Spor Kulübü Taraftar Sayfası</h1>
+                <h1><br><span>Büyük FENERBAHÇE Taraftarı</span> Hoşgeldiniz</h1>  
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/fb.jpg" alt="fb">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Hakkımızda</h1>
+                    <p>Fenerbahçe erkek futbol takımı, Fenerbahçe Spor Kulübü'nün Süper Lig'de mücadele eden profesyonel futbol takımıdır. Kulübün futbol dışında faaliyet gösterdiği diğer spor dalları basketbol, voleybol, atletizm, boks, kürek, yelken, yüzme ve masa tenisidir. Fenerbahçe futbol takımı, iç saha maçlarını İstanbul Kadıköy'de bulunan 47.834 kişilik Fenerbahçe Şükrü Saracoğlu Stadyumu'nda yapmaktadır. 1907 yılında bir futbol kulübü olarak kurulan Fenerbahçe, Türkiye futbol tarihinin başarılı ve en çok taraftarı olan spor kulüplerinden birisidir.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('puanDurumu')">Puan Durumu</p>
+                        <p class="tab-links" onclick="opentab('fikstur')">Fikstür</p>
+                        <p class="tab-links" onclick="opentab('teknikEkip')">Teknik Ekip</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="puanDurumu">
+                        <ul>
+                            <li><span>Puan Durumu</span></li>
+                            <li>FENERBAHÇE 57 Puan</li>
+                            <li>GALATASARAY 57 Puan</li>
+                            <li>TRABZONSPOR 37 Puan</li>
+                            <li>BEŞİKTAŞ 36 PUAN</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="fikstur">
+                        <ul>
+                            <li><span>Fikstür</span></li>
+                            <li>28/01 Pazar Fenerbahçe-Ankaragücü</li>
+                            <li>04/02 Pazar Antalyaspor-Fenerbahçe</li>
+                            <li>06/02 Salı Gaziantep FK-Fenerbahçe</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="teknikEkip">
+                        <ul>
+                            <li><span>Teknik Ekip</span></li>
+                            <li>Mário Branco-Sportif Direktör</li>
+                            <li>İsmail Kartal-Teknik Direktör</li>
+                            <li>Emir Yolaç-İdari Menajer</li>
+                            <li>Uz. Dr. Ertuğrul Karanlık-Sağlık Departmanı Yöneticisi ve Takım Doktoru</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="branslar">
+        <div class="container">
+            <h1 class="sub-title">Branşlar</h1>
+            <div class="brans-list">
+                <div>
+                    <i class="fa-solid fa-futbol"></i>
+                    <h2>Fenerbahçe Futbol</h2>
+                    <p>Fenerbahçe Futbol Takımı</p>
+                    <a href="https://www.fenerbahce.org/branslar/futbolatakimi/haberler" target="_blank">Daha Fazla</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-basketball"></i>
+                    <h2>Fenerbahçe Beko</h2>
+                    <p>Fenerbahçe Basketbol Takımı</p>
+                    <a href="https://www.fenerbahce.org/branslar/basketbolerkek/haberler" target="_blank">Daha Fazla</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-volleyball"></i>
+                    <h2>Fenerbahçe Opet</h2>
+                    <p>Fenerbahçe Voleybol Takımı</p>
+                    <a href="https://www.fenerbahce.org/branslar/voleybolkadin/haberler" target="_blank">Daha Fazla</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="news">
+        <div class="container">
+            <h1 class="sub-title">Haberler</h1>
+            <div class="new-list">
+                <div class="new">
+                    <img src="./images/fb-1.jpg" alt="fb">
+                    <div class="layer">
+                        <h3>MKE Ankaragücü maçı hazırlıkları sürüyor</h3>
+                        <a href="https://www.fenerbahce.org/haberler/futbol/2024/1/mke-ankaragucu-maci-hazirliklari-suruyor" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="new">
+                    <img src="./images/fb-1.jpg" alt="fb">
+                    <div class="layer">
+                        <h3>Trendyol Süper Lig 24 ve 25. haftalar ile Ziraat Türkiye Kupası Son 16 Turu maç programları açıklandı</h3>
+                        <a href="https://www.fenerbahce.org/haberler/futbol/2024/1/trendyol-super-lig-24-ve-25-haftalar-ile-ziraat-turkiye-kupasi-son-16-turu-mac-programlari-acikland" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="new">
+                    <img src="./images/fb-1.jpg" alt="fb">
+                    <div class="layer">
+                        <h3>Başantrenörümüz Sarunas Jasikevicius ve basketbolcularımız Bologna galibiyetini değerlendirdi</h3>
+                        <a href="https://www.fenerbahce.org/haberler/basketbol-erkek/2024/1/basantrenorumuz-sarunas-jasikevicius-ve-basketbolcularimiz-bologna-galibiyetini-degerlendirdi" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.fenerbahce.org/haberler" target="_blank" class="btn">Daha Fazla</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">İletişim</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> info@fenerbahce.org</p>
+                    <p><i class="fa-solid fa-phone"></i> 0 555 555 55 55</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Fenerbahce" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://twitter.com/Fenerbahce" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/fenerbahce/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Adınız" required>
+                        <input type="email" name="Email" placeholder="Mail adresiniz" required>
+                        <textarea name="Message" rows="6" placeholder="Mesajınız"></textarea>
+                        <button type="submit" class="btn btn2">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Tüm hakları saklıdır. © Berkay Meriç</p>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
